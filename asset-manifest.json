@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/anupom998/Advance-E-Learning-Platform/static/css/main.b439e10d.css",
-    "main.js": "/anupom998/Advance-E-Learning-Platform/static/js/main.67d67629.js",
-    "static/js/453.0a36081d.chunk.js": "/anupom998/Advance-E-Learning-Platform/static/js/453.0a36081d.chunk.js",
-    "index.html": "/anupom998/Advance-E-Learning-Platform/index.html",
-    "main.b439e10d.css.map": "/anupom998/Advance-E-Learning-Platform/static/css/main.b439e10d.css.map",
-    "main.67d67629.js.map": "/anupom998/Advance-E-Learning-Platform/static/js/main.67d67629.js.map",
-    "453.0a36081d.chunk.js.map": "/anupom998/Advance-E-Learning-Platform/static/js/453.0a36081d.chunk.js.map"
+    "main.css": "/Advance-E-Learning-Platform/static/css/main.b439e10d.css",
+    "main.js": "/Advance-E-Learning-Platform/static/js/main.d4a93144.js",
+    "static/js/453.0a36081d.chunk.js": "/Advance-E-Learning-Platform/static/js/453.0a36081d.chunk.js",
+    "index.html": "/Advance-E-Learning-Platform/index.html",
+    "main.b439e10d.css.map": "/Advance-E-Learning-Platform/static/css/main.b439e10d.css.map",
+    "main.d4a93144.js.map": "/Advance-E-Learning-Platform/static/js/main.d4a93144.js.map",
+    "453.0a36081d.chunk.js.map": "/Advance-E-Learning-Platform/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b439e10d.css",
-    "static/js/main.67d67629.js"
+    "static/js/main.d4a93144.js"
   ]
 }
