@@ -1,15 +1,16 @@
 import React from "react";
+import logo from "../assets/logo.png";
+import gatewayGateways from "../assets/payment-gateways.png";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="max-w-6xl mx-auto p-4">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center py-12">
-    
           <div className="mb-8 lg:mb-0">
             <div className="flex items-center mb-4">
               {/* Logo */}
-              <img src="/assets/logo.png" alt="Logo" />
+              <img src={logo} alt="Logo" />
             </div>
 
             {/* Description */}
@@ -22,16 +23,16 @@ const Footer = () => {
             {/* Social media links */}
             <div className="flex mt-4 space-x-4 text-xl">
               <a href="#" className="text-white">
-              <i className="bi bi-facebook"></i>
+                <i className="bi bi-facebook"></i>
               </a>
               <a href="#" className="text-white">
-              <i className="bi bi-youtube"></i>
+                <i className="bi bi-youtube"></i>
               </a>
               <a href="#" className="text-white">
-              <i className="bi bi-linkedin"></i>
+                <i className="bi bi-linkedin"></i>
               </a>
               <a href="#" className="text-white">
-              <i className="bi bi-telegram"></i>
+                <i className="bi bi-telegram"></i>
               </a>
             </div>
           </div>
@@ -85,15 +86,15 @@ const Footer = () => {
             <h4 className="font-semibold text-xl mb-5">Contact Info</h4>
             <ul className="space-y-3">
               <li className="text-base flex items-center">
-              <i className="bi bi-geo-alt-fill mr-3 text-lg text-purple-dark"></i>
+                <i className="bi bi-geo-alt-fill mr-3 text-lg text-purple-dark"></i>
                 Mymensingh City
               </li>
               <li className="text-base flex items-center">
-              <i className="bi bi-telephone-fill mr-3 text-lg text-purple-dark"></i>
+                <i className="bi bi-telephone-fill mr-3 text-lg text-purple-dark"></i>
                 01870000000
               </li>
               <li className="text-base flex items-center">
-              <i className="bi bi-envelope-fill mr-3 text-lg text-purple-dark"></i>
+                <i className="bi bi-envelope-fill mr-3 text-lg text-purple-dark"></i>
                 adviceelearningplatform@gmail.com
               </li>
             </ul>
@@ -102,7 +103,7 @@ const Footer = () => {
 
         <div className="mt-8 flex flex-col lg:flex-row justify-between items-center border-t border-gray-700 pb-4 pt-8 lg:space-y-0 space-y-4">
           {/* Payment gatways */}
-          <img src="/assets/payment-gateways.png" alt="payment gateways" />
+          <img src={gatewayGateways}  alt="payment gateways" />
 
           {/* Copywrite */}
           <p className="text-xs">
