@@ -2,6 +2,49 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Folder structure
+Folder structer
+
+├── /public
+│   ├── index.html
+│   ├── favicon.ico
+│   │
+├── /src
+│   │   
+│   └── /assets
+│       ├── /images
+│       └── /fonts
+│   │
+│   ├── /components
+│   │   ├── /common
+│   │   └── /library 
+│   │   
+│   ├── /Layouts
+│   │   └── main.jsx
+│   │   └── dashboard.jsx
+│   │   
+│   ├── /contexts
+│   │   └── AppContext.js
+│   │   
+│   ├── /hooks
+│   │   └── useCustomHook.js
+│   │   
+│   ├── /pages
+│   │   ├── /Home.jsx
+│   │   ├── /About.jsx
+│   │   └── /Contactjsx
+│   │   
+│   ├── /styles
+│   │   ├── app.css
+│   │   └── /others
+│   │   
+│   ├── App.jsx
+│   ├── index.js
+├── .env
+├── .gitignore
+├── package. Sonjson
+└── README.md
+
 ## Available Scripts
 
 In the project directory, you can run:
