@@ -85,15 +85,15 @@ const Footer = () => {
             <h4 className="font-semibold text-xl mb-5">Contact Info</h4>
             <ul className="space-y-3">
               <li className="text-base flex items-center">
-              <i class="bi bi-geo-alt-fill mr-3 text-lg text-purple-700"></i>
+              <i class="bi bi-geo-alt-fill mr-3 text-lg text-purple-dark"></i>
                 Mymensingh City
               </li>
               <li className="text-base flex items-center">
-              <i class="bi bi-telephone-fill mr-3 text-lg text-purple-700"></i>
+              <i class="bi bi-telephone-fill mr-3 text-lg text-purple-dark"></i>
                 01870000000
               </li>
               <li className="text-base flex items-center">
-              <i class="bi bi-envelope-fill mr-3 text-lg text-purple-700"></i>
+              <i class="bi bi-envelope-fill mr-3 text-lg text-purple-dark"></i>
                 adviceelearningplatform@gmail.com
               </li>
             </ul>
