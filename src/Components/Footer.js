@@ -22,16 +22,16 @@ const Footer = () => {
             {/* Social media links */}
             <div className="flex mt-4 space-x-4 text-xl">
               <a href="#" className="text-white">
-              <i class="bi bi-facebook"></i>
+              <i className="bi bi-facebook"></i>
               </a>
               <a href="#" className="text-white">
-              <i class="bi bi-youtube"></i>
+              <i className="bi bi-youtube"></i>
               </a>
               <a href="#" className="text-white">
-              <i class="bi bi-linkedin"></i>
+              <i className="bi bi-linkedin"></i>
               </a>
               <a href="#" className="text-white">
-              <i class="bi bi-telegram"></i>
+              <i className="bi bi-telegram"></i>
               </a>
             </div>
           </div>
@@ -85,15 +85,15 @@ const Footer = () => {
             <h4 className="font-semibold text-xl mb-5">Contact Info</h4>
             <ul className="space-y-3">
               <li className="text-base flex items-center">
-              <i class="bi bi-geo-alt-fill mr-3 text-lg text-purple-dark"></i>
+              <i className="bi bi-geo-alt-fill mr-3 text-lg text-purple-dark"></i>
                 Mymensingh City
               </li>
               <li className="text-base flex items-center">
-              <i class="bi bi-telephone-fill mr-3 text-lg text-purple-dark"></i>
+              <i className="bi bi-telephone-fill mr-3 text-lg text-purple-dark"></i>
                 01870000000
               </li>
               <li className="text-base flex items-center">
-              <i class="bi bi-envelope-fill mr-3 text-lg text-purple-dark"></i>
+              <i className="bi bi-envelope-fill mr-3 text-lg text-purple-dark"></i>
                 adviceelearningplatform@gmail.com
               </li>
             </ul>
