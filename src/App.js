@@ -1,5 +1,5 @@
 import "./App.css";
-import Footer from "./Components/Basic/Footer";
+import Footer from "./Components/Footer"
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <h2 className="bg-red-600">Hello World!</h2>
       </div>
 
-      <Footer />
+      <Footer/>
     </>
   );
 }
