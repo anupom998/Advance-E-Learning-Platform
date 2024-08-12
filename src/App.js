@@ -1,18 +1,12 @@
 import "./App.css";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import HomeLayout from "./Layouts/HomeLayout";
+import IndexPage from "./Pages/IndexPage";
 
 function App() {
   return (
-    <main>
-      <Header />
-
-      <div className="App min-h-screen">
-        {/* <h2 className="bg-purple-light">Hello World!</h2> */}
-      </div>
-
-      <Footer />
-    </main>
+    <HomeLayout>
+      <IndexPage />
+    </HomeLayout>
   );
 }
 
