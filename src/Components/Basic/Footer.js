@@ -1,5 +1,7 @@
 import React from "react";
 
+import Logo from "../../assets/site-logo.png"
+
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
@@ -8,7 +10,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="mb-8 lg:mb-0">
             <div className="flex items-center mb-4">
-              <img src="/assets/logo.png" alt="Logo" className="" />
+              <img src={Logo} alt="Logo" className="" />
             </div>
             <p className="text-base lg:max-w-xs max-w-full">
               Learn how to use online social media in our society and how to
