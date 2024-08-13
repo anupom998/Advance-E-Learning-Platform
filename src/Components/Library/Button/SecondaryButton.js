@@ -7,10 +7,10 @@ import React from "react";
  * @param {object} [props] - Additional properties to be applied to the `<button>` element, such as `onClick`, `disabled`, etc. This is optional.
  */
 
-const PrimaryButton = ({ title, className, icon, ...props }) => {
+const SecondaryButton = ({ title, className, icon, ...props }) => {
   return (
     <button
-      className={`bg-purple-dark text-white py-2.5 px-5 font-semibold hover:bg-white hover:text-purple-dark transition-all duration-700 rounded capitalize ${className}`}
+      className={`bg-white text-purple-dark py-2.5 px-5 font-semibold transition-all duration-700 rounded capitalize ${className}`}
       {...props}
     >
       {title}
@@ -19,4 +19,4 @@ const PrimaryButton = ({ title, className, icon, ...props }) => {
   );
 };
 
-export default PrimaryButton;
+export default SecondaryButton;
