@@ -3,12 +3,25 @@ import HeroImg from "../../assets/hero-img.png";
 import PrimaryButton from "../Library/Button/PrimaryButton";
 import SecondaryButton from "../Library/Button/SecondaryButton";
 import { TypeAnimation } from "react-type-animation";
+import '../../styles/blink-animation.css';
 
 const Hero = () => {
   return (
     <div className="bg-purple-light flex items-center justify-center">
       <div className="max-w-6xl w-full mx-auto px-4 pt-14 pb-20 text-white grid gap-x-6 grid-cols-1 md:grid-cols-2">
         <div className="">
+          <p className=" text-gray-300/80 font-semibold border-b border-gray-300/50 pb-0.5 w-fit tracking-[0.2em] text-[13px]  mb-12">
+            <span className="">l e a r n i n g</span>
+            <span className="bg-orange-400 h-2 w-2 rounded-full inline-block mx-4 animate-blink "></span>
+            <span className="">a n d</span>
+        <span className="bg-orange-400 h-2 w-2 rounded-full inline-block mx-4 animate-blink "></span>
+            <br />
+            <span className="">e a r n i n g</span>
+        <span className="bg-orange-400 h-2 w-2 rounded-full inline-block mx-4 animate-blink "></span>
+            <span>p l a t f o r m</span>
+        <span className="bg-orange-400 h-2 w-2 rounded-full inline-block mx-4 animate-blink "></span>
+          </p>
+
           {/* Navigation link */}
           <div className="flex space-x-3 mb-7">
             <PrimaryButton
@@ -31,15 +44,14 @@ const Hero = () => {
               <TypeAnimation
                 sequence={[
                   "Learning",
-                  2000, // Waits 1s
+                  2000, // Waits 2s
                   "Earning",
-                  2000,
+                  2000, // Waits 2s
                 ]}
                 wrapper="span"
-                speed={40}
+                speed={40} // 40 Km/h
                 cursor={true}
                 repeat={Infinity}
-                //   style={{ fontSize: "2em", display: "inline-block" }}
               />
             </span>
             <br />
