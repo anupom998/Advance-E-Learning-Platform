@@ -1,14 +1,12 @@
 import "./App.css";
-import Footer from "./Components/Basic/Footer";
+import HomeLayout from "./Layouts/HomeLayout";
+import IndexPage from "./Pages/IndexPage";
 
 function App() {
   return (
-    <>
-      <div className="App min-h-screen">
-        
-      </div>
-      <Footer />
-    </>
+    <HomeLayout>
+      <IndexPage />
+    </HomeLayout>
   );
 }
 

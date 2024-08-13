@@ -1,0 +1,17 @@
+/* Blink Animation */
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 3s linear infinite;
+}
