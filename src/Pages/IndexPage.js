@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../Components/IndexPage/Hero";
 import CourseBenefits from "../Components/IndexPage/CourseBenefits";
+import AboutUs from "../Components/IndexPage/AboutUs";
 
 const IndexPage = () => {
   return (
@@ -8,8 +9,9 @@ const IndexPage = () => {
       {/* Hero Section */}
       <Hero />
 
-      <section className="bg-gray-50 min-h-screen">
+      <section className="bg-gray-50 pb-20 space-y-10">
         <CourseBenefits />
+        <AboutUs/>
       </section>
     </main>
   );
