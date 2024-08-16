@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Advance-E-Learning-Platform/static/css/main.265b61e7.css",
+    "main.js": "/Advance-E-Learning-Platform/static/js/main.6b159cde.js",
+    "static/js/453.0a36081d.chunk.js": "/Advance-E-Learning-Platform/static/js/453.0a36081d.chunk.js",
+    "static/media/hero-img.png": "/Advance-E-Learning-Platform/static/media/hero-img.3707eba8d733d484a5f9.png",
+    "static/media/logo.png": "/Advance-E-Learning-Platform/static/media/logo.939fe52f8d336d4670a2.png",
+    "index.html": "/Advance-E-Learning-Platform/index.html",
+    "main.265b61e7.css.map": "/Advance-E-Learning-Platform/static/css/main.265b61e7.css.map",
+    "main.6b159cde.js.map": "/Advance-E-Learning-Platform/static/js/main.6b159cde.js.map",
+    "453.0a36081d.chunk.js.map": "/Advance-E-Learning-Platform/static/js/453.0a36081d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.265b61e7.css",
+    "static/js/main.6b159cde.js"
+  ]
+}
