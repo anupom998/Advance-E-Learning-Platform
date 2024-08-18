@@ -6,9 +6,14 @@ module.exports = {
       colors:{
         "purple-dark": "#5e3fd7",
         "purple-light": "#6F6FFF"
-      }
+      },
+      backgroundImage: {
+        signIn: "url('./assets/sign-in-bg.jpg')"
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 
