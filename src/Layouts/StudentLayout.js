@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import StudentHeader from "../Components/Header/StudentHeader";
 
 const HomeLayout = ({ children }) => {
   return (
     <main>
-      <Header />
+      <StudentHeader />
       {children}
       <Footer />
     </main>
