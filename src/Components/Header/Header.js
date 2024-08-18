@@ -1,17 +1,13 @@
 import React from "react";
-import PrimaryButton from "./Library/Button/PrimaryButton";
-import logo from "../assets/logo.png";
+import PrimaryButton from ".././Library/Button/PrimaryButton";
+import logo from "../../assets/logo.png";
 
 const Header = () => {
   return (
     <nav className="bg-purple-light border-b sticky top-0 border-gray-400/50 z-20">
       <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <img
-        src={logo}
-          alt="Logo"
-          className="max-h-[5.5rem]"
-        />
+        <img src={logo} alt="Logo" className="max-h-[5.5rem]" />
         <button
           data-collapse-toggle="navbar-default"
           type="button"
