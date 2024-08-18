@@ -2,6 +2,7 @@ import "./App.css";
 import HomeLayout from "./Layouts/HomeLayout";
 import StudentLayout from "./Layouts/StudentLayout";
 import IndexPage from "./Pages/IndexPage";
+import ProfileSetting from "./Pages/Student/ProfileSetting";
 /**
  * Task : Setup the APP router
  */
@@ -15,7 +16,9 @@ function App() {
      *Student pages => should be in private route
      * add prefix of "student"
      */
-    <StudentLayout></StudentLayout>
+    <StudentLayout>
+      <ProfileSetting />
+    </StudentLayout>
   );
 }
 
