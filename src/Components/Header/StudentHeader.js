@@ -1,17 +1,13 @@
 import React from "react";
-import PrimaryButton from "./Library/Button/PrimaryButton";
-import logo from "../assets/logo.png";
+import PrimaryButton from ".././Library/Button/PrimaryButton";
+import logo from "../../assets/logo.png";
 
 const StudentHeader = () => {
   return (
     <nav className="bg-purple-light border-b sticky top-0 border-gray-400/50 z-20">
       <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <img
-        src={logo}
-          alt="Logo"
-          className="max-h-[5.5rem]"
-        />
+        <img src={logo} alt="Logo" className="max-h-[5.5rem]" />
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -40,19 +36,11 @@ const StudentHeader = () => {
           <ul className="font-medium flex flex-col p-8 md:p-0 mt-4 bg-[#040453] md:bg-transparent md:flex-row md:space-x-5 space-x-0 md:space-y-0 space-y-4 rtl:space-x-reverse md:mt-0 md:border-0">
             {[
               {
-                title: "sign in",
-                route: "/",
+                title: "Profile setting",
+                route: "/student/profile",
               },
               {
-                title: "Admin login",
-                route: "/",
-              },
-              {
-                title: "Subadmin login",
-                route: "/",
-              },
-              {
-                title: "sign up",
+                title: "Logout",
                 route: "/",
               },
             ].map((btn, i) => (
