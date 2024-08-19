@@ -8,7 +8,6 @@ const IndexPage = () => {
     <main className="min-h-screen">
       {/* Hero Section */}
       <Hero />
-
       <section className="bg-gray-50 pb-20 space-y-10">
         <CourseBenefits />
         <AboutUs/>
