@@ -12,4 +12,6 @@ const StudentLayout = ({ children }) => {
   );
 };
 
+
 export default StudentLayout;
+

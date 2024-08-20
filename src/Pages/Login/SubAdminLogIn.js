@@ -2,7 +2,7 @@ import React from 'react'
 
 const SubAdminLogIn = () => {
   return (
-    <section id='sub-admin-login'>
+    <section >
         <div>SubAdminLogIn</div>
     </section>
     
