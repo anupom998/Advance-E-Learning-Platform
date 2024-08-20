@@ -19,9 +19,9 @@ const Sidebar = ({ studentName, links }) => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   return (
-    <aside className="md:col-span-2  w-full border-r py-10">
+    <aside className="md:col-span-2  w-full md:border-r md:border-b-0 border-b  py-10">
       {/* Name */}
-      <h1 className="text-xl mb-5 font-semibold px-10">{studentName}</h1>
+      <h1 className="text-xl mb-5 font-semibold px-10 text-dark-blue">{studentName}</h1>
       <ul className="space-y-0.5">
         {links.map((item, i) => {
           let isActive = searchParams.get("s") === item?.urlParam;

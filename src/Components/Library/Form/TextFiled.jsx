@@ -14,7 +14,7 @@ const TextFiled = ({ title, className, placeholder, type, ...props }) => {
     <div>
       <label
         htmlFor="first-name"
-        className="block text-sm font-semibold mb-2.5 capitalize"
+        className="block text-sm font-semibold mb-2.5 capitalize text-dark-blue"
       >
         {title}
       </label>
