@@ -38,14 +38,14 @@ const StudentHeader = () => {
             {[
               {
                 title: "Profile setting",
-                route: "/student/profile",
+                route: "/student/profile?s=profile",
               },
               {
                 title: "Logout",
                 route: "/",
               },
             ].map((btn, i) => (
-              <l key={i}>
+              <li key={i}>
                 <NavLink to={btn?.route}>
                   <PrimaryButton
 
@@ -53,7 +53,7 @@ const StudentHeader = () => {
                     className="w-full md:w-fit"
                   />
                 </NavLink>
-              </l>
+              </li>
             ))}
           </ul>
         </div>
