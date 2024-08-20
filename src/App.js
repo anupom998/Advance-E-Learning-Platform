@@ -38,33 +38,33 @@ const App = () => {
           <Route
             path="/sign-up"
             element={
-              <HomeLayout>
+              
                 <SignUp />
-              </HomeLayout>
+             
             }
           />
           <Route
             path="/login"
             element={
-              <HomeLayout>
+              
                 <SignIn />
-              </HomeLayout>
+              
             }
           />
           <Route
             path="/admin-login"
             element={
-              <HomeLayout>
+              
                 <AdminLogIn />
-              </HomeLayout>
+              
             }
           />
           <Route
             path="/subadmin-login"
             element={
-              <HomeLayout>
+              
                 <SubAdminLogIn />
-              </HomeLayout>
+              
             }
           />
           <Route path="*" element={<Navigate to="/" replace />} />
