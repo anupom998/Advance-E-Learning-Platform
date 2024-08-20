@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors:{
         "purple-dark": "#5e3fd7",
-        "purple-light": "#6F6FFF"
+        "purple-light": "#6F6FFF",
+        "dark-blue":"#040453"
       },
       backgroundImage: {
         signIn: "url('./assets/sign-in-bg.jpg')"
