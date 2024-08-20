@@ -19,7 +19,7 @@ const Sidebar = ({ studentName, links }) => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   return (
-    <aside className="md:col-span-2  w-full">
+    <aside className="md:col-span-2  w-full border-r py-10">
       {/* Name */}
       <h1 className="text-xl mb-5 font-semibold px-10">{studentName}</h1>
       <ul className="space-y-0.5">
