@@ -2,8 +2,12 @@ import React from "react";
 import BreadCrumb from "../../Components/Library/BreadCrumb";
 import Sidebar from "../../Components/Normal/Profile/Sidebar";
 import ProfileSettings from "../../Components/Normal/Profile/ProfileSettings";
+import { useSearchParams } from "react-router-dom";
+import Reference from "../../Components/Normal/Profile/Reference";
 
 const Profile = () => {
+  const [searchParams] = useSearchParams();
+  const currentTab = searchParams.get("s");
 
   return (
     <main className="min-h-screen  py-20 bg-gray-50">
@@ -57,7 +61,10 @@ const Profile = () => {
 
           {/* Pages */}
           <div className="md:col-span-5 w-full md:p-10 p-5">
-            <ProfileSettings />
+            {currentTab === 'profile' ? (<ProfileSettings />) :
+              currentTab === 'reference' ? (<Reference />)
+                : (<></>)}
+
           </div>
         </div>
       </section>
