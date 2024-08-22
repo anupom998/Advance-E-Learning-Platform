@@ -4,6 +4,7 @@ import Sidebar from "../../Components/Normal/Profile/Sidebar";
 import ProfileSettings from "../../Components/Normal/Profile/ProfileSettings";
 import { useSearchParams } from "react-router-dom";
 import Reference from "../../Components/Normal/Profile/Reference";
+import MyPassbook from "../../Components/Normal/Profile/MyPassbook";
 
 const Profile = () => {
   const [searchParams] = useSearchParams();
@@ -62,7 +63,8 @@ const Profile = () => {
           {/* Pages */}
           <div className="md:col-span-5 w-full md:p-10 p-5">
             {currentTab === 'profile' ? (<ProfileSettings />) :
-              currentTab === 'reference' ? (<Reference />)
+              currentTab === 'reference' ? (<Reference />):
+              currentTab === 'my-passbook' ? (<MyPassbook />)
                 : (<></>)}
 
           </div>
