@@ -5,6 +5,7 @@ import ProfileSettings from "../../Components/Normal/Profile/ProfileSettings";
 import { useSearchParams } from "react-router-dom";
 import Reference from "../../Components/Normal/Profile/Reference";
 import MyPassbook from "../../Components/Normal/Profile/MyPassbook";
+import Withdrawals from "../../Components/Normal/Profile/Withdrawals";
 
 const Profile = () => {
   const [searchParams] = useSearchParams();
@@ -64,7 +65,8 @@ const Profile = () => {
           <div className="md:col-span-5 w-full md:p-10 p-5">
             {currentTab === 'profile' ? (<ProfileSettings />) :
               currentTab === 'reference' ? (<Reference />):
-              currentTab === 'my-passbook' ? (<MyPassbook />)
+              currentTab === 'my-passbook' ? (<MyPassbook />):
+              currentTab === 'withdrawals' ? (<Withdrawals />)
                 : (<></>)}
 
           </div>
