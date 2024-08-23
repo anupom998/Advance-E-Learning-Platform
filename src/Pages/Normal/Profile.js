@@ -6,6 +6,7 @@ import { useSearchParams } from "react-router-dom";
 import Reference from "../../Components/Normal/Profile/Reference";
 import MyPassbook from "../../Components/Normal/Profile/MyPassbook";
 import Withdrawals from "../../Components/Normal/Profile/Withdrawals";
+import ChangePassword from "../../Components/Normal/Profile/ChangePassword";
 
 const Profile = () => {
   const [searchParams] = useSearchParams();
@@ -66,8 +67,9 @@ const Profile = () => {
             {currentTab === 'profile' ? (<ProfileSettings />) :
               currentTab === 'reference' ? (<Reference />):
               currentTab === 'my-passbook' ? (<MyPassbook />):
-              currentTab === 'withdrawals' ? (<Withdrawals />)
-                : (<></>)}
+              currentTab === 'withdrawals' ? (<Withdrawals />):
+              currentTab === 'change-password' ? (<ChangePassword />)
+                : (<ProfileSettings />)}
 
           </div>
         </div>
