@@ -12,7 +12,7 @@ const SignIn = () => {
   };
   return (
     <section>
-        <div className='container  grid grid-cols-1 md:grid-cols-2 w-screen'>
+        <div className='grid grid-cols-1 md:grid-cols-2 '>
             
                 {/*left content  */}
                 <div className=' h-full w-full bg-signIn px-20 flex flex-col'>
