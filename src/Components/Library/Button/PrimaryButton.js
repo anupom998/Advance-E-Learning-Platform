@@ -10,7 +10,7 @@ import React from "react";
 const PrimaryButton = ({ title, className, icon, ...props }) => {
   return (
     <button
-      className={`bg-purple-dark text-white py-2.5 px-5 font-semibold hover:bg-white hover:text-purple-dark transition-all duration-700 rounded capitalize ${className}`}
+      className={`bg-purple-dark border border-purple-dark text-white py-2.5 px-5 font-semibold hover:bg-white hover:text-purple-dark transition-all duration-700 rounded capitalize ${className}`}
       {...props}
     >
       {title}

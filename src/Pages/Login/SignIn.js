@@ -11,7 +11,7 @@ const SignIn = () => {
     setShowPassword(!showPassword);
   };
   return (
-    <section id='sign-in'>
+    <section>
         <div className='container  grid grid-cols-1 md:grid-cols-2 w-screen'>
             
                 {/*left content  */}
