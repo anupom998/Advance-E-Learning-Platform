@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-d
 // layouts
 import HomeLayout from "./Layouts/HomeLayout";
 import StudentLayout from "./Layouts/StudentLayout";
+
 // logins
 import SignUp from "./Pages/Login/SignUp";
 import SignIn from "./Pages/Login/SignIn"
@@ -15,8 +16,9 @@ import AirdropEarn from "./Pages/Normal/AirdropEarn";
 import MyLearning from "./Pages/Normal/MyLearning"
 import Profile from "./Pages/Normal/Profile"
 import VideoEarn from "./Pages/Normal/VideoEarn"
-import { useAuth } from "./hooks/useAuth";
+import useAuth from "./Hooks/useAuth.js";
 import IndexPage from "./Pages/IndexPage";
+
 
 const App = () => {
   const { isLoggedIn } = useAuth();

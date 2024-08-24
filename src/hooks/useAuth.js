@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useAuth = () => {
+const useAuth = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Default to not logged in
 
   const login = () => setIsLoggedIn(true);   // Function to log in
@@ -8,3 +8,5 @@ export const useAuth = () => {
 
   return { isLoggedIn, login, logout }; // Return the state and functions
 };
+
+export default useAuth;

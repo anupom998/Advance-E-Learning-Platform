@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryButton from ".././Library/Button/PrimaryButton";
 import logo from "../../assets/logo.png";
+import { NavLink } from "react-router-dom";
 
 const StudentHeader = () => {
   return (
@@ -37,19 +38,21 @@ const StudentHeader = () => {
             {[
               {
                 title: "Profile setting",
-                route: "/student/profile",
+                route: "/student/profile?s=profile",
               },
               {
                 title: "Logout",
                 route: "/",
               },
             ].map((btn, i) => (
-              <li>
-                <PrimaryButton
-                  key={i}
-                  title={btn?.title}
-                  className="w-full md:w-fit"
-                />
+              <li key={i}>
+                <NavLink to={btn?.route}>
+                  <PrimaryButton
+
+                    title={btn?.title}
+                    className="w-full md:w-fit"
+                  />
+                </NavLink>
               </li>
             ))}
           </ul>
