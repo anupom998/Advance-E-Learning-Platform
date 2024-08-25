@@ -16,7 +16,7 @@ import AirdropEarn from "./Pages/Normal/AirdropEarn";
 import MyLearning from "./Pages/Normal/MyLearning"
 import Profile from "./Pages/Normal/Profile"
 import VideoEarn from "./Pages/Normal/VideoEarn"
-import useAuth from "./Hooks/useAuth.js";
+import useAuth from "./hooks/useAuth.js";
 import IndexPage from "./Pages/IndexPage";
 
 
