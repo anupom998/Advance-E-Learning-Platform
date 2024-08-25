@@ -1,17 +1,16 @@
 import React from "react";
-import PrimaryButton from "./Library/Button/PrimaryButton";
-import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png"; // Update the path to your logo
+import PrimaryButton from ".././Library/Button/PrimaryButton";// Ensure this component is correctly imported
 
 const Header = () => {
   return (
     <nav className="bg-purple-light border-b sticky top-0 border-gray-400/50 z-20">
       <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <img
-        src={logo}
-          alt="Logo"
-          className="max-h-[5.5rem]"
-        />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="max-h-[5.5rem]" />
+        </Link>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -40,28 +39,26 @@ const Header = () => {
           <ul className="font-medium flex flex-col p-8 md:p-0 mt-4 bg-[#040453] md:bg-transparent md:flex-row md:space-x-5 space-x-0 md:space-y-0 space-y-4 rtl:space-x-reverse md:mt-0 md:border-0">
             {[
               {
-                title: "sign in",
-                route: "/",
+                title: "Sign In",
+                route: "/login",
               },
               {
-                title: "Admin login",
-                route: "/",
+                title: "Admin Login",
+                route: "/admin-login",
               },
               {
-                title: "Subadmin login",
-                route: "/",
+                title: "Subadmin Login",
+                route: "/subadmin-login",
               },
               {
-                title: "sign up",
-                route: "/",
+                title: "Sign Up",
+                route: "/sign-up",
               },
             ].map((btn, i) => (
-              <li>
-                <PrimaryButton
-                  key={i}
-                  title={btn?.title}
-                  className="w-full md:w-fit"
-                />
+              <li key={i}>
+                <Link to={btn.route}>
+                  <PrimaryButton title={btn.title} className="w-full md:w-fit" />
+                </Link>
               </li>
             ))}
           </ul>
@@ -70,5 +67,6 @@ const Header = () => {
     </nav>
   );
 };
+
 
 export default Header;

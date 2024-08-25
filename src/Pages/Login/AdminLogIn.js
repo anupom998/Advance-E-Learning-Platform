@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminLogIn = () => {
   return (
-    <section id='admin-login'>
+    <section >
         <div>AdminLogIn</div>
     </section>
   )
