@@ -44,10 +44,10 @@ const AdminLogIn = () => {
                         </h2>
                          
                     </div>
-                    
+                    {/* form */}
                     <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                         <form action="#" method="POST" className="space-y-6">
-                    
+                            {/* Email or Phone */}
                             <label htmlFor="email" className="block text-md font-medium leading-6 text-[rgb(4,4,83)]">
                                 Admin E-mail Or Phone
                             </label>
@@ -63,7 +63,7 @@ const AdminLogIn = () => {
                                 />
                             </div>
                     
-
+                            {/* Password */}
                             <div>
                                 <div className="flex items-center justify-between">
                                     <label htmlFor="password" className="block text-md font-medium leading-6 text-[rgb(4,4,83)]">
@@ -87,7 +87,7 @@ const AdminLogIn = () => {
                                     ></i>
                                 </div>
                             </div>
-                           
+                           {/* submit button */}
                             <div>
                                 <button
                                     type="submit"
