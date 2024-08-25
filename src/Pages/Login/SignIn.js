@@ -17,16 +17,16 @@ const SignIn = () => {
                 {/*left content  */}
                 <div className=' h-full w-full bg-signIn px-20 flex flex-col'>
                     {/* logo */}
-                    <div className='flex-1 flex items-center justify-center'>
-                        <a href='#' className='justify-start'>
+                    <div className='flex-1 py-10'>
+                        <a href='#' className=''>
                             <img src={Logo} />
                         </a> 
                     </div> 
                       {/* text */}
-                    <div className='flex-1 flex items-center justify-center'>
-                        <p className='text-xl text-white'>Discover world best online courses here. 24k online course is waiting for you</p>
+                    <div className='flex-1 py-10'>
+                        <p className='text-2xl text-white'>Discover world best online courses here. 24k online course is waiting for you</p>
                     </div>      
-                    <div className='flex-1 flex items-center justify-center' >
+                    <div className='flex-1 py-10' >
                     {/* person's image  */}
                         <img src={Person} /> 
                     </div>    
@@ -34,7 +34,7 @@ const SignIn = () => {
                 
                       
                 {/* right content */}
-            <div className='flex-1 h-full bg-green-600'>
+            <div className='flex-1 h-full '>
                   
                 <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
