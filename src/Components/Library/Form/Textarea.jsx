@@ -8,21 +8,24 @@ import React from "react";
  * @param {string} [placeholder]
  */
 
-const Textarea = ({ title, className, placeholder, type, ...props }) => {
+const Textarea = ({ title, className, placeholder, defaultValue, type, name, ...props }) => {
   return (
     <div>
-      <label
+      {title && (<label
         htmlFor="first-name"
         className="block text-sm font-semibold mb-2.5 capitalize text-dark-blue"
       >
         {title}
-      </label>
+      </label>)}
       <textarea
         {...props}
-        name={title}
+        name={name ? name : title}
         placeholder={placeholder ? placeholder : title}
         className={`w-full p-3 border border-gray-300 rounded-sm  placeholder-gray-400  ${className}`}
-      ></textarea>
+      >
+        {defaultValue}
+
+      </textarea>
     </div>
   );
 };
