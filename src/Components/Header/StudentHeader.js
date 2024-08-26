@@ -1,14 +1,17 @@
 import React from "react";
 import PrimaryButton from ".././Library/Button/PrimaryButton";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/site-logo.png";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const StudentHeader = () => {
   return (
     <nav className="bg-purple-light border-b sticky top-0 border-gray-400/50 z-20">
-      <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <img src={logo} alt="Logo" className="max-h-[5.5rem]" />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="max-h-[5.5rem]" />
+        </Link>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -45,6 +48,15 @@ const StudentHeader = () => {
                 route: "/student/my-homeworks",
               },
               {
+                title: "Watching Video Earn",
+                route: "/student/my-earnings",
+              },
+              {
+                title: "Airdrop and Dollar Earn",
+                route: "/student/airdrop-earn",
+              },
+              {
+
                 title: "Profile setting",
                 route: "/student/profile?s=profile",
               },

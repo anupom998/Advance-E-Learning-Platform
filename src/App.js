@@ -16,8 +16,18 @@ import AirdropEarn from "./Pages/Normal/AirdropEarn";
 import MyLearning from "./Pages/Normal/MyLearning"
 import Profile from "./Pages/Normal/Profile"
 import VideoEarn from "./Pages/Normal/VideoEarn"
-import useAuth from "./Hooks/useAuth.js";
+import useAuth from "./hooks/useAuth";
 import IndexPage from "./Pages/IndexPage";
+import ProtectedIndexPage from "./Pages/Normal/ProtectedIndexPage";
+import MiddleSection from "./Components/ProtectedIndexPage/MiddleSection";
+
+// const App = () => {
+//   return (
+//     <div>
+//       <MiddleSection />
+//     </div>
+//   )
+// }
 
 
 const App = () => {
@@ -40,33 +50,33 @@ const App = () => {
           <Route
             path="/sign-up"
             element={
-              <HomeLayout>
+              
                 <SignUp />
-              </HomeLayout>
+             
             }
           />
           <Route
             path="/login"
             element={
-              <HomeLayout>
+              
                 <SignIn />
-              </HomeLayout>
+              
             }
           />
           <Route
             path="/admin-login"
             element={
-              <HomeLayout>
+              
                 <AdminLogIn />
-              </HomeLayout>
+              
             }
           />
           <Route
             path="/subadmin-login"
             element={
-              <HomeLayout>
+              
                 <SubAdminLogIn />
-              </HomeLayout>
+              
             }
           />
           <Route path="*" element={<Navigate to="/" replace />} />
@@ -78,7 +88,7 @@ const App = () => {
             path="/"
             element={
               <StudentLayout>
-                <IndexPage />
+                <ProtectedIndexPage />
               </StudentLayout>
             }
           />
@@ -122,7 +132,7 @@ const App = () => {
               </StudentLayout>
             }
           />
-          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
           </>
         )}
       </Routes>
