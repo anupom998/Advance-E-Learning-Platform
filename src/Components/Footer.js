@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="mb-8 lg:mb-0">
             <div className="flex items-center mb-4">
               {/* Logo */}
-              <img src={logo} alt="Logo" />
+              <img src={logo} className="max-h-32" alt="Logo" />
             </div>
 
             {/* Description */}
