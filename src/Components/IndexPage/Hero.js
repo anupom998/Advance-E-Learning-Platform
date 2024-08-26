@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeroImg from "../../assets/hero-img.png";
 import PrimaryButton from "../Library/Button/PrimaryButton";
 import SecondaryButton from "../Library/Button/SecondaryButton";
@@ -26,14 +27,18 @@ const Hero = () => {
 
           {/* Navigation link */}
           <div className="flex space-x-3 mb-7">
-            <PrimaryButton
-              title="Login"
-              icon={<i class="bi bi-arrow-right"></i>}
-            />
-            <SecondaryButton
-              title="Sign up"
-              icon={<i class="bi bi-arrow-right"></i>}
-            />
+            <Link to={"/login"}>
+              <PrimaryButton
+                title="Login"
+                icon={<i class="bi bi-arrow-right"></i>}
+              />
+            </Link>
+            <Link to={"/sign-up"}>
+              <SecondaryButton
+                title="Sign up"
+                icon={<i class="bi bi-arrow-right"></i>}
+                />
+              </Link>
           </div>
 
           {/* Slogun */}
