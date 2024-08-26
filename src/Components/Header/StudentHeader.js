@@ -56,6 +56,7 @@ const StudentHeader = () => {
                 route: "/student/airdrop-earn",
               },
               {
+
                 title: "Profile setting",
                 route: "/student/profile?s=profile",
               },
