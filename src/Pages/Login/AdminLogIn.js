@@ -13,23 +13,22 @@ const AdminLogIn = () => {
   };
   return (
     <section>
-        <div className='grid grid-cols-1 md:grid-cols-2 '>
-            
+            <div className='grid grid-cols-1 lg:grid-cols-2 '>
                 {/*left content  */}
-                <div className=' h-full w-full bg-signIn px-20 flex flex-col'>
+                <div className=' h-full w-full bg-signIn px-20 flex flex-col gap-10 md:gap-20 py-10'>
                     {/* logo */}
-                    <div className='flex-1 py-10'>
+                    <div className='flex-1'>
                         <a href='#' className=''>
-                            <img src={Logo} />
+                            <img src={Logo} alt='' className='max-h-32' />
                         </a> 
                     </div> 
                       {/* text */}
-                    <div className='flex-1 py-10'>
-                        <p className='text-2xl text-white'>Discover world best online courses here. 24k online course is waiting for you</p>
+                    <div className='flex-1 '>
+                        <p className='sm:text-2xl text-xl text-gray-100 tracking-wider'>Discover world best online <br/> courses here. 24k online course <br/> is  waiting for you</p>
                     </div>      
-                    <div className='flex-1 py-10' >
+                    <div className='flex-1 ' >
                     {/* Office image  */}
-                        <img src={OfficeImg} /> 
+                        <img src={OfficeImg} className='max-h-72 md:max-h-96' alt=''/> 
                     </div>    
                 </div>
                 
