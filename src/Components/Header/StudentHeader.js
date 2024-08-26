@@ -1,14 +1,17 @@
 import React from "react";
 import PrimaryButton from ".././Library/Button/PrimaryButton";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/site-logo.png";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const StudentHeader = () => {
   return (
     <nav className="bg-purple-light border-b sticky top-0 border-gray-400/50 z-20">
-      <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <img src={logo} alt="Logo" className="max-h-[5.5rem]" />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="max-h-[5.5rem]" />
+        </Link>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -36,6 +39,22 @@ const StudentHeader = () => {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-8 md:p-0 mt-4 bg-[#040453] md:bg-transparent md:flex-row md:space-x-5 space-x-0 md:space-y-0 space-y-4 rtl:space-x-reverse md:mt-0 md:border-0">
             {[
+              {
+                title: "My Learning",
+                route: "/student/course",
+              },
+              {
+                title: "Home work",
+                route: "/student/my-homeworks",
+              },
+              {
+                title: "Watching Video Earn",
+                route: "/student/my-earnings",
+              },
+              {
+                title: "Airdrop and Dollar Earn",
+                route: "/student/airdrop-earn",
+              },
               {
                 title: "Profile setting",
                 route: "/student/profile?s=profile",

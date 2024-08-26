@@ -18,122 +18,126 @@ import Profile from "./Pages/Normal/Profile"
 import VideoEarn from "./Pages/Normal/VideoEarn"
 import useAuth from "./hooks/useAuth";
 import IndexPage from "./Pages/IndexPage";
+import ProtectedIndexPage from "./Pages/Normal/ProtectedIndexPage";
+import MiddleSection from "./Components/ProtectedIndexPage/MiddleSection";
+
+// const App = () => {
+//   return (
+//     <div>
+//       <MiddleSection />
+//     </div>
+//   )
+// }
 
 
 const App = () => {
+  const { isLoggedIn } = useAuth();
+
   return (
-    <VideoEarn />
-  )
-}
-
-// const App = () => {
-//   const { isLoggedIn } = useAuth();
-
-//   return (
-//     <Router>
-//       <Routes>
-//         {/* Public Routes - HomeLayout */}
-//         {!isLoggedIn ? (
-//           <>
-//           <Route
-//             path="/"
-//             element={
-//               <HomeLayout>
-//                 <IndexPage />
-//               </HomeLayout>
-//             }
-//           />
-//           <Route
-//             path="/sign-up"
-//             element={
+    <Router>
+      <Routes>
+        {/* Public Routes - HomeLayout */}
+        {!isLoggedIn ? (
+          <>
+          <Route
+            path="/"
+            element={
+              <HomeLayout>
+                <IndexPage />
+              </HomeLayout>
+            }
+          />
+          <Route
+            path="/sign-up"
+            element={
               
-//                 <SignUp />
+                <SignUp />
              
-//             }
-//           />
-//           <Route
-//             path="/login"
-//             element={
+            }
+          />
+          <Route
+            path="/login"
+            element={
               
-//                 <SignIn />
+                <SignIn />
               
-//             }
-//           />
-//           <Route
-//             path="/admin-login"
-//             element={
+            }
+          />
+          <Route
+            path="/admin-login"
+            element={
               
-//                 <AdminLogIn />
+                <AdminLogIn />
               
-//             }
-//           />
-//           <Route
-//             path="/subadmin-login"
-//             element={
+            }
+          />
+          <Route
+            path="/subadmin-login"
+            element={
               
-//                 <SubAdminLogIn />
+                <SubAdminLogIn />
               
-//             }
-//           />
-//           <Route path="*" element={<Navigate to="/" replace />} />
-//         </>
-//         ) : (
-//           // Protected Routes - StudentLayout
-//           <>
-//           <Route
-//             path="/"
-//             element={
-//               <StudentLayout>
-//                 <IndexPage />
-//               </StudentLayout>
-//             }
-//           />
-//           <Route
-//             path="/student/course"
-//             element={
-//               <StudentLayout>
-//                 <MyLearning />
-//               </StudentLayout>
-//             }
-//           />
-//           <Route
-//             path="/student/my-homeworks"
-//             element={
-//               <StudentLayout>
-//                 <HomeWork />
-//               </StudentLayout>
-//             }
-//           />
-//           <Route
-//             path="/student/my-earnings"
-//             element={
-//               <StudentLayout>
-//                 <VideoEarn />
-//               </StudentLayout>
-//             }
-//           />
-//           <Route
-//             path="/student/airdrop-earn"
-//             element={
-//               <StudentLayout>
-//                 <AirdropEarn />
-//               </StudentLayout>
-//             }
-//           />
-//           <Route
-//             path="/student/profile"
-//             element={
-//               <StudentLayout>
-//                 <Profile/>
-//               </StudentLayout>
-//             }
-//           />
-//           <Route path="*" element={<Navigate to="/dashboard" replace />} />
-//           </>
-//         )}
-//       </Routes>
-//     </Router>
-//   );
-// };
+            }
+          />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </>
+        ) : (
+          // Protected Routes - StudentLayout
+          <>
+          <Route
+            path="/"
+            element={
+              <StudentLayout>
+                <ProtectedIndexPage />
+              </StudentLayout>
+            }
+          />
+          <Route
+            path="/student/course"
+            element={
+              <StudentLayout>
+                <MyLearning />
+              </StudentLayout>
+            }
+          />
+          <Route
+            path="/student/my-homeworks"
+            element={
+              <StudentLayout>
+                <HomeWork />
+              </StudentLayout>
+            }
+          />
+          <Route
+            path="/student/my-earnings"
+            element={
+              <StudentLayout>
+                <VideoEarn />
+              </StudentLayout>
+            }
+          />
+          <Route
+            path="/student/airdrop-earn"
+            element={
+              <StudentLayout>
+                <AirdropEarn />
+              </StudentLayout>
+            }
+          />
+          <Route
+            path="/student/profile"
+            element={
+              <StudentLayout>
+                <Profile/>
+              </StudentLayout>
+            }
+          />
+          <Route path="*" element={<Navigate to="/" replace />} />
+          </>
+        )}
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;

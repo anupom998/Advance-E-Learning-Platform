@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 // image
-import Logo from "../../assets/logo.png"
-import Person from "../../assets/person-img.png"
+import Logo from "../../assets/site-logo.png"
+// import Person from "../../assets/person-img.png"
+import OfficeImg from "../../assets/office.png"
 
 const SignIn = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -27,8 +28,8 @@ const SignIn = () => {
                         <p className='text-2xl text-white'>Discover world best online courses here. 24k online course is waiting for you</p>
                     </div>      
                     <div className='flex-1 py-10' >
-                    {/* person's image  */}
-                        <img src={Person} /> 
+                    {/* Office image  */}
+                        <img src={OfficeImg} /> 
                     </div>    
                 </div>
                 

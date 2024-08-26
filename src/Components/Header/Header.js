@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png"; // Update the path to your logo
-import PrimaryButton from ".././Library/Button/PrimaryButton";// Ensure this component is correctly imported
+import logo from "../../assets/site-logo.png"; 
+import PrimaryButton from ".././Library/Button/PrimaryButton";
 
 const Header = () => {
   return (

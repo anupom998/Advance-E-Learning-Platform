@@ -1,8 +1,9 @@
 
 import React, { useState } from 'react';
 // image
-import Logo from "../../assets/logo.png";
-import Person from "../../assets/person-img.png";
+import Logo from "../../assets/site-logo.png";
+// import Person from "../../assets/person-img.png";
+import OfficeImg from "../../assets/office.png"
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -52,8 +53,8 @@ const SignUp = () => {
             </p>
           </div>
           <div className='flex-1 py-10'>
-            {/* person's image */}
-            <img src={Person} alt="Person" />
+            {/* Office image */}
+            <img src={OfficeImg} alt="Person" />
           </div>
         </div>
 
