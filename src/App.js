@@ -21,10 +21,10 @@ import AirdropEarn from "./Pages/Normal/AirdropEarn";
 import MyLearning from "./Pages/Normal/MyLearning";
 import Profile from "./Pages/Normal/Profile";
 import VideoEarn from "./Pages/Normal/VideoEarn";
-import useAuth from "./Hooks/useAuth";
+import useAuth from "./hooks/useAuth";
 import IndexPage from "./Pages/IndexPage";
 import ProtectedIndexPage from "./Pages/Normal/ProtectedIndexPage";
-import MiddleSection from "./Components/ProtectedIndexPage/MiddleSection";
+
 
 const App = () => {
   const { isLoggedIn } = useAuth();
