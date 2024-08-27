@@ -1,10 +1,14 @@
 import { useState } from "react";
+import { redirect } from "react-router-dom";
 
 const useAuth = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(!false); // Default to not logged in
+  const [isLoggedIn, setIsLoggedIn] = useState(!true); // Default to not logged in
 
-  const login = () => setIsLoggedIn(true);   // Function to log in
-  const logout = () => setIsLoggedIn(false); // Function to log out
+  const login = () => setIsLoggedIn(true);  
+  const logout = () => {
+    setIsLoggedIn(false)
+    redirect('/')
+  };
 
   return { isLoggedIn, login, logout }; // Return the state and functions
 };

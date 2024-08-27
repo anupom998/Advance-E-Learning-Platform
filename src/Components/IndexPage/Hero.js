@@ -30,13 +30,13 @@ const Hero = () => {
             <Link to={"/login"}>
               <PrimaryButton
                 title="Login"
-                icon={<i class="bi bi-arrow-right"></i>}
+                icon={<i className="bi bi-arrow-right"></i>}
               />
             </Link>
             <Link to={"/sign-up"}>
               <SecondaryButton
                 title="Sign up"
-                icon={<i class="bi bi-arrow-right"></i>}
+                icon={<i className="bi bi-arrow-right"></i>}
                 />
               </Link>
           </div>
