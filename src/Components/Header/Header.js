@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/site-logo.png"; 
 import PrimaryButton from ".././Library/Button/PrimaryButton";
-import { useAuth } from "../../hooks/useAuth"; // Import the useAuth hook
+
 const Header = () => {
-  const { login } = useAuth(); // Get the login function from the hook
+  
   return (
     <nav className="bg-purple-light border-b sticky top-0 border-gray-400/50 z-20">
       <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
