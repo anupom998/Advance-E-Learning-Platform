@@ -4,12 +4,24 @@ import { useState } from 'react';
 import Logo from "../../assets/site-logo.png"
 // import Person from "../../assets/person-img.png"
 import OfficeImg from "../../assets/office.png"
+import { useNavigate } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth'; //
 
 const SignIn = () => {
-    const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const { login } = useAuth(); // Destructure the login function from useAuth
+  const navigate = useNavigate(); // For redirecting after login
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    // Call the login function to set isLoggedIn to true
+    login();
+    // Redirect to the protected home page after login
+    navigate('/');
   };
   return (
     <section>
@@ -51,7 +63,7 @@ const SignIn = () => {
                         </div>
                         {/* form */}
                         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                            <form action="#" method="POST" className="space-y-6">
+                            <form onSubmit={handleSubmit} method="POST" className="space-y-6">
                                 {/* Email or Whatsapp */}
                                 <label htmlFor="email" className="block text-md font-medium leading-6 text-[rgb(4,4,83)]">
                                     Email or Whatsapp
