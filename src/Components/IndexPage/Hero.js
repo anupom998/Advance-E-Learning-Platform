@@ -9,11 +9,11 @@ import "../../styles/blink-animation.css";
 const Hero = () => {
   return (
     <div className="bg-purple-light flex items-center justify-center">
-      <div className="max-w-6xl w-full mx-auto px-4 pt-14 pb-20 text-white grid gap-x-6 grid-cols-1 md:grid-cols-2">
+      <div className="max-w-6xl w-full mx-auto px-4 pt-14 pb-20 text-purple-dark grid gap-x-6 grid-cols-1 md:grid-cols-2">
         <div className="">
             
           {/* Blinking Widget */}
-          <p className=" text-gray-300/80 font-semibold border-b border-gray-300/50 pb-0.5 w-fit tracking-[0.2em] text-[13px]  mb-12">
+          <p className=" text-gray-400 font-semibold border-b border-gray-400/50 pb-0.5 w-fit tracking-[0.2em] text-[13px]  mb-12">
             <span className="">l e a r n i n g</span>
             <span className="bg-orange-400 h-2 w-2 rounded-full inline-block mx-4 animate-blink "></span>
             <span className="">a n d</span>
@@ -46,7 +46,7 @@ const Hero = () => {
             Advice E- <br />
             learning
             <br />
-            <span className=" text-white font-semibold">
+            <span className=" text-purple-dark font-semibold">
               E-
               <TypeAnimation
                 sequence={[
@@ -66,7 +66,7 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-[18px] text-[#FFFFFFB8] mb-12">
+          <p className="text-[18px] text-gray-500 mb-12">
             The main objective of this setup is how to use online social media
             in our society and how to earn online without wasting valuable time
             from online social media.
