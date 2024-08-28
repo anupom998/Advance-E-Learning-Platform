@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/site-logo.png"; 
 import PrimaryButton from ".././Library/Button/PrimaryButton";
-import useAuth from "../../hooks/useAuth"; // Import the useAuth hook
+import { useAuth } from "../../hooks/useAuth"; // Import the useAuth hook
 const Header = () => {
   const { login } = useAuth(); // Get the login function from the hook
   return (
@@ -42,7 +42,7 @@ const Header = () => {
               {
                 title: "Sign In",
                 route: "/login",
-                action: login, // Attach the login function to the Sign In button
+                
               },
               {
                 title: "Admin Login",
