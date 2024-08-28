@@ -16,7 +16,7 @@
 //         {/* Left Column */}
 //         <div className="lg:w-1/2 flex flex-col items-center justify-center text-center mb-8 lg:mb-0">
 //           {/* Blinking Widget */}
-//           <p className="text-gray-300/80 font-semibold border-b border-gray-300/50 pb-0.5 w-fit tracking-[0.2em] text-[13px] mb-12">
+//           <p className="text-gray-400/80 font-semibold border-b border-gray-400/50 pb-0.5 w-fit tracking-[0.2em] text-[13px] mb-12">
 //             <span className="">l e a r n i n g</span>
 //             <span className="bg-orange-400 h-2 w-2 rounded-full inline-block mx-4 animate-blink"></span>
 //             <span className="">a n d</span>
@@ -31,7 +31,7 @@
 //             Advice E- <br />
 //             learning
 //             <br />
-//             <span className="text-white font-semibold">
+//             <span className="text-purple-dark font-semibold">
 //               E-
 //               <TypeAnimation
 //                 sequence={[
@@ -89,7 +89,7 @@ const MiddleSection = () => {
         {/* Left Column */}
         <div className="lg:w-1/2 flex flex-col items-center justify-center text-center font-semibold mb-8 lg:mb-0">
           {/* Blinking Widget */}
-          <p className=" text-gray-300/80 font-semibold border-b border-gray-300/50 pb-0.5 w-fit tracking-[0.2em] text-[13px]  mb-12">
+          <p className=" text-gray-400 font-semibold border-b border-gray-400/50 pb-0.5 w-fit tracking-[0.2em] text-[13px]  mb-12">
             <span className="">l e a r n i n g</span>
             <span className="bg-orange-400 h-2 w-2 rounded-full inline-block mx-4 animate-blink "></span>
             <span className="">a n d</span>
@@ -100,7 +100,7 @@ const MiddleSection = () => {
             <span>p l a t f o r m</span>
             <span className="bg-orange-400 h-2 w-2 rounded-full inline-block mx-4 animate-blink "></span>
           </p>
-          <h1 className="lg:text-6xl text-4xl mb-5 lg:leading-[4.2rem] leading-[3.7rem] font-light text-white">
+          <h1 className="lg:text-6xl text-4xl mb-5 lg:leading-[4.2rem] leading-[3.7rem] font-light text-purple-dark">
             Advice E- <br />
             learning
             <br />
@@ -124,7 +124,7 @@ const MiddleSection = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-[16px] text-[#FFFFFFB8] mb-10 max-w-md">
+          <p className="text-[16px] text-gray-400 mb-10 max-w-md">
             The main objective of this setup is how to use online social media
             in our society and how to earn online without wasting valuable time
             from online social media.

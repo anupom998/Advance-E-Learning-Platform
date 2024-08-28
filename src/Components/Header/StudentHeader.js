@@ -41,7 +41,7 @@ const StudentHeader = () => {
           </svg>
         </button>
         <div className="hidden w-full xl:block xl:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-8 xl:p-0 mt-4 bg-[#040453] xl:bg-transparent xl:flex-row xl:space-x-4 space-x-0 xl:space-y-0 space-y-4 rtl:space-x-reverse xl:mt-0 xl:border-0">
+          <ul className="font-medium flex flex-col p-8 xl:p-0 mt-4 bg-[#223068] xl:bg-transparent xl:flex-row xl:space-x-4 space-x-0 xl:space-y-0 space-y-4 rtl:space-x-reverse xl:mt-0 xl:border-0">
             {[
               {
                 title: "My Learning",
