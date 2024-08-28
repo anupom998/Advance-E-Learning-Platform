@@ -5,7 +5,7 @@ import Logo from "../../assets/site-logo.png"
 // import Person from "../../assets/person-img.png"
 import OfficeImg from "../../assets/office.png"
 import { useNavigate } from 'react-router-dom';
-import useAuth from '../../hooks/useAuth'; //
+import useAuth from '../../Hooks/useAuth'; //
 
 const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);

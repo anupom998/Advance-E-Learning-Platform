@@ -21,9 +21,9 @@ import AirdropEarn from "./Pages/Normal/AirdropEarn";
 import MyLearning from "./Pages/Normal/MyLearning";
 import Profile from "./Pages/Normal/Profile";
 import VideoEarn from "./Pages/Normal/VideoEarn";
-import useAuth from "./hooks/useAuth";
 import IndexPage from "./Pages/IndexPage";
 import ProtectedIndexPage from "./Pages/Normal/ProtectedIndexPage";
+import useAuth from "./Hooks/useAuth";
 
 
 const App = () => {
