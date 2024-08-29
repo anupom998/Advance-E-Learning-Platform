@@ -12,9 +12,9 @@ const ChildAdminSupport = () => {
                 <p className="text-sm text-center sm:text-base text-gray-700">
                     Any kind of problem join here for solution
                 </p>
-                <button className="bg-black text-white font-semibold px-4 sm:px-6 py-2 rounded hover:bg-gray-800 transition">
+                <a href="https://wa.me/+8801988321994" target='_blank' rel="noreferrer" className="bg-black text-white font-semibold px-4 sm:px-6 py-2 rounded hover:bg-gray-800 transition">
                     Whatsapp
-                </button>
+                </a>
             </div>
         </div>
     );

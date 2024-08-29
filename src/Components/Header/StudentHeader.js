@@ -51,14 +51,14 @@ const StudentHeader = () => {
                 title: "Home work",
                 route: "/student/my-homeworks",
               },
-              {
-                title: "Watching Video Earn",
-                route: "/student/my-earnings",
-              },
-              {
-                title: "Airdrop and Dollar Earn",
-                route: "/student/airdrop-earn",
-              },
+              // {
+              //   title: "Watching Video Earn",
+              //   route: "/student/my-earnings",
+              // },
+              // {
+              //   title: "Airdrop and Dollar Earn",
+              //   route: "/student/airdrop-earn",
+              // },
               {
 
                 title: "Profile setting",

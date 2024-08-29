@@ -10,22 +10,22 @@ const AboutUs = () => {
       {[
         {
           title: "Successfully trained",
-          desc: "2000+ students",
+          desc: "20000+ students",
           icon: a,
         },
         {
           title: "Video courses",
-          desc: "2000+ students",
+          desc: "20000+ students",
           icon: b,
         },
         {
           title: "Expert instructor",
-          desc: "2000+ students",
+          desc: "20000+ students",
           icon: c,
         },
         {
           title: "Proudly Received",
-          desc: "2000+ students",
+          desc: "20000+ students",
           icon: d,
         },
       ].map((card, i) => (
