@@ -9,7 +9,7 @@ const CourseBenefits = () => {
       {[
         {
           title: "Courses",
-          desc: `There are 60+ video classes and live classes, help line.`,
+          desc: `There are 100+ video classes and live classes, help line.`,
           icon: icon1,
         },
         {
