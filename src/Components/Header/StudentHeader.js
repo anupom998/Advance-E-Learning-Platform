@@ -3,7 +3,7 @@ import PrimaryButton from ".././Library/Button/PrimaryButton";
 import logo from "../../assets/site-logo.png";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import useAuth from "../../Hooks/useAuth";
+import { useAuth } from "../../hooks/useAuth";
 
 const StudentHeader = () => {
 

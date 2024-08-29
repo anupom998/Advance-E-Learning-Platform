@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  
   Route,
   Routes,
   Navigate,
@@ -8,6 +8,9 @@ import {
 // layouts
 import HomeLayout from "./Layouts/HomeLayout";
 import StudentLayout from "./Layouts/StudentLayout";
+
+// useAuth
+import { useAuth } from './hooks/useAuth';
 
 // logins
 import SignUp from "./Pages/Login/SignUp";
@@ -21,16 +24,18 @@ import AirdropEarn from "./Pages/Normal/AirdropEarn";
 import MyLearning from "./Pages/Normal/MyLearning";
 import Profile from "./Pages/Normal/Profile";
 import VideoEarn from "./Pages/Normal/VideoEarn";
+
 import IndexPage from "./Pages/IndexPage";
 import ProtectedIndexPage from "./Pages/Normal/ProtectedIndexPage";
-import useAuth from "./Hooks/useAuth";
 
 
 const App = () => {
   const { isLoggedIn } = useAuth();
+  console.log('Is logged in:', isLoggedIn);
+
 
   return (
-    <Router>
+    
       <Routes>
         {/* Public Routes - HomeLayout */}
         {!isLoggedIn ? (
@@ -104,8 +109,11 @@ const App = () => {
           </>
         )}
       </Routes>
-    </Router>
+    
   );
 };
+ 
 
 export default App;
+
+

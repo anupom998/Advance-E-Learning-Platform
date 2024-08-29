@@ -1,16 +1,32 @@
-import { useState } from "react";
-import { redirect } from "react-router-dom";
+import { createContext, useContext, useState } from "react";
 
-const useAuth = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(!true); // Default to not logged in
+const AuthContext = createContext();
 
-  const login = () => setIsLoggedIn(true);  
-  const logout = () => {
-    setIsLoggedIn(false)
-    redirect('/')
+export const AuthProvider = ({ children }) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const login = (email, password) => {
+    const dummyEmail = "u@ex.com";
+    const dummyPassword = "pass";
+
+    if (email === dummyEmail && password === dummyPassword) {
+      setIsLoggedIn(true);
+      return true;
+    } else {
+      alert("Invalid email or password");
+      return false;
+    }
   };
 
-  return { isLoggedIn, login, logout }; // Return the state and functions
+  const logout = () => {
+    setIsLoggedIn(false);
+  };
+
+  return (
+    <AuthContext.Provider value={{ isLoggedIn, login, logout }}>
+      {children}
+    </AuthContext.Provider>
+  );
 };
 
-export default useAuth;
+export const useAuth = () => useContext(AuthContext);
