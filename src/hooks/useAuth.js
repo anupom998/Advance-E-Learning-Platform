@@ -6,8 +6,8 @@ export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const login = (email, password) => {
-    const dummyEmail = "u@ex.com";
-    const dummyPassword = "pass";
+    const dummyEmail = "hasan@student.com";
+    const dummyPassword = "student";
 
     if (email === dummyEmail && password === dummyPassword) {
       setIsLoggedIn(true);
