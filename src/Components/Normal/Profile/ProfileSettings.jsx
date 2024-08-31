@@ -68,12 +68,12 @@ const ProfileSettings = () => {
         <div className=" grid md:grid-cols-2 grid-cols-1 gap-5">
           {/* Balance */}
           <h1 className="text-[1.625rem] font-semibold text-dark-blue">
-            Balance: 10.90
+            Balance: 0.00
           </h1>
 
           {/* Student ID */}
           <h1 className="text-[1.625rem] font-semibold text-dark-blue">
-            Student ID: 2458220
+            Student ID: 0
           </h1>
         </div>
 

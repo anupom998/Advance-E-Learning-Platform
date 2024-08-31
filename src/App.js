@@ -10,7 +10,7 @@ import HomeLayout from "./Layouts/HomeLayout";
 import StudentLayout from "./Layouts/StudentLayout";
 
 // useAuth
-import { useAuth } from './hooks/useAuth';
+import { useAuth } from './Hooks/useAuth';
 
 // logins
 import SignUp from "./Pages/Login/SignUp";
@@ -31,8 +31,6 @@ import ProtectedIndexPage from "./Pages/Normal/ProtectedIndexPage";
 
 const App = () => {
   const { isLoggedIn } = useAuth();
-  console.log('Is logged in:', isLoggedIn);
-
 
   return (
     

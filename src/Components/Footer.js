@@ -87,15 +87,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="text-base flex items-center">
                 <i className="bi bi-geo-alt-fill mr-3 text-lg text-purple-dark"></i>
-                Mymensingh City
+                Dhaka City
               </li>
               <li className="text-base flex items-center">
                 <i className="bi bi-telephone-fill mr-3 text-lg text-purple-dark"></i>
-                01870000000
+                01988000000
               </li>
               <li className="text-base flex items-center">
                 <i className="bi bi-envelope-fill mr-3 text-lg text-purple-dark"></i>
-                adviceelearningplatform@gmail.com
+                mysuccesselearningplaform.com
               </li>
             </ul>
           </div>
@@ -103,7 +103,7 @@ const Footer = () => {
 
         <div className="mt-8 flex flex-col lg:flex-row justify-between items-center border-t border-gray-700 pb-4 pt-8 lg:space-y-0 space-y-4">
           {/* Payment gatways */}
-          <img src={gatewayGateways}  alt="payment gateways" />
+          <img src={gatewayGateways} alt="payment gateways" />
 
           {/* Copywrite */}
           <p className="text-xs">

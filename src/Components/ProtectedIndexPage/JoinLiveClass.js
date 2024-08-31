@@ -15,7 +15,7 @@ const ClassCard = ({ topic }) => {
 };
 
 const LiveClassesSection = () => {
-    const classes = [
+    /*const classes = [
         "Offer sell and buy",
         "Al Quran Hadish & Namaz Shikkha",
         "Photo Editing",
@@ -26,8 +26,18 @@ const LiveClassesSection = () => {
         "Data Entry",
         "Graphics Desgin",
         "Spoken English Training"
-    ];
+    ];*/
 
+    const classes = [
+        "Internet Offer sell and buy",
+        "Al-Quran & Namaz Shikkha",
+        "Photo Editing",
+        "Video Editing",
+        "Lead Generation",
+        "Product Sell And Buy",
+        "Spoken English",
+        "Digital Marketing"
+    ];
     return (
         <div className="p-4 sm:p-6 border-2 bg-gray-50 w-full max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-semibold text-[rgb(4,4,83)] text-center mb-6">Join Live Classes</h2>

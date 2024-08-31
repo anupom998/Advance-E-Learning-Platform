@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Logo from "../../assets/site-logo.png";
 import OfficeImg from "../../assets/office.png";
-import { useAuth } from '../../hooks/useAuth';
+import { useAuth } from '../../Hooks/useAuth';
 
 const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
   const { login, isLoggedIn } = useAuth();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("hasan@student.com");
+  const [password, setPassword] = useState("student");
   const navigate = useNavigate(); // Initialize useNavigate
 
   const togglePasswordVisibility = () => {
@@ -64,7 +64,7 @@ const SignIn = () => {
                 Sign In
               </h2>
               <p className='text-start text-sm text-gray-500'>
-                New User?{''}
+                New User?
                 <a
                   href='/sign-up'
                   className='font-semibold underline leading-6 text-indigo-600 hover:text-indigo-500'>

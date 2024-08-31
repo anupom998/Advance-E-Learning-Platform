@@ -8,7 +8,7 @@ const HelpSection = () => {
             
             {/* Flex container for paragraph and button */}
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <p className="text-gray-700 text-sm sm:text-base whitespace-nowrap">Joining Time: 8:30AM - 11:30PM</p>
+                <p className="text-gray-700 text-sm sm:text-base whitespace-nowrap">Joining Time: 10:30AM - 8:30PM</p>
                 <button className="bg-black text-white font-bold px-6 sm:px-8 py-2 rounded flex items-center justify-center hover:bg-gray-800 transition">
                     Join Meeting <span className="ml-2">→</span>
                 </button>
@@ -37,8 +37,8 @@ const TeamMember = ({ role, name }) => {
 const SupportTeamSection = () => {
     return (
         <div className="p-4 sm:p-6 border-2 text-center">
-            <TeamMember role="Team Leader" name="Asif Siddik" />
-            <TeamMember role="Trainer" name="MD MAZHARUL ISLAM BIDDUT" />
+            <TeamMember role="Team Leader" name="" />
+            <TeamMember role="Trainer" name="" />
         </div>
     );
 };

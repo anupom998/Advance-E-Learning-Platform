@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroImg from "../../assets/hero-img.png";
+import HeroImg from "../../assets/office.png";
 import PrimaryButton from "../Library/Button/PrimaryButton";
 import SecondaryButton from "../Library/Button/SecondaryButton";
 import { TypeAnimation } from "react-type-animation";

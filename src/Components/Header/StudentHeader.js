@@ -3,7 +3,7 @@ import PrimaryButton from ".././Library/Button/PrimaryButton";
 import logo from "../../assets/site-logo.png";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { useAuth } from "../../hooks/useAuth";
+import { useAuth } from "../../Hooks/useAuth";
 
 const StudentHeader = () => {
 
@@ -51,14 +51,14 @@ const StudentHeader = () => {
                 title: "Home work",
                 route: "/student/my-homeworks",
               },
-              {
-                title: "Watching Video Earn",
-                route: "/student/my-earnings",
-              },
-              {
-                title: "Airdrop and Dollar Earn",
-                route: "/student/airdrop-earn",
-              },
+              // {
+              //   title: "Watching Video Earn",
+              //   route: "/student/my-earnings",
+              // },
+              // {
+              //   title: "Airdrop and Dollar Earn",
+              //   route: "/student/airdrop-earn",
+              // },
               {
 
                 title: "Profile setting",
